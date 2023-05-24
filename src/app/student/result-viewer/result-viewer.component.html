@@ -1,0 +1,21 @@
+<div class="result-view">
+  <h2>Result Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Date_of_Birth</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let subject of result">
+        <td>{{ subject.roll_no }}</td>
+        <td>{{ subject.name }}</td>
+        <td>{{ subject.date_of_birth }}</td>
+        <td>{{ subject.score}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

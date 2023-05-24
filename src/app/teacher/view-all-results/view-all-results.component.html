@@ -1,0 +1,28 @@
+
+<div class="results-container" *ngIf="students">
+    <h2>View All Results  <button class="add-button"  (click)="addStudent()">Add Student</button> </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Date of Birth</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.Name }}</td>
+          <td>{{ student.Roll_no }}</td>
+          <td>{{ student.date_of_birth }}</td>
+          <td>{{ student.score }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div *ngIf="!students">
+   
+  </div>
+ 
+  
